@@ -1,6 +1,4 @@
  
-//create button for profile
-//deploy to surge 
 var input;
 $('#back').on('click', search)
 $('input').on('input', e =>{
@@ -12,9 +10,6 @@ $('input').on('keypress', function(e){
     }
 })
 $('#submit').on('click', search)
-
-
-
 
 function search(e){
     $.get(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${input} `, (data) =>{
@@ -50,15 +45,15 @@ function search(e){
         })
     })
 }
-
+//.append(ingrid)
 //var ingrid = $(`<div id= 'list'></div>`)
+// for(var i =0; i <15; i++){
+//     var ingredient = $('<p> ${`value.strIngredient$(i}`</p>')
+//     console.log(ingrid)
+//     $(ingrid).append(ingredient)
+// }
 //var ingredientlist= value.strIngredient
 
-// for(var i =0; i <15; i++){
-//     var ingredient = $(`<p> value.strIngredient${i}</p>`)
-//     console.log(ingredient)
-//     $('ingrid').append(ingredient)
-// }
 
 // resultCard.append(h3).append(img).append(div).append(a)
 // $('#results').append(resultCard)

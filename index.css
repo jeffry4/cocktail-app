@@ -15,7 +15,12 @@ body::after {
   z-index: -2;   
   background-size: contain;
 }
-
+.lead{
+  text-size-adjust: auto;
+  border: 2px solid black;
+  background-color: coral;
+  max-width: 50%;
+}
 .result{
   width: 20%;
   height:auto;
@@ -39,6 +44,11 @@ body::after {
   main{
      position: relative;
      
+   }
+   .inst{
+    text-size-adjust: auto;
+    border: 2px solid black;
+    background-color: coral;
    }
   .site-header {
     background-color: rgba(0, 0, 0, .85);
